@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var arr=["mango","apple","peach","banana","papaya"];
+        console.log(arr);
+        console.log(arr[0]);
+
+        var arr1=[3];
+        arr1[0]="swapnil";
+        arr1[1]="kshitij";
+        arr1[2]="goraksha";
+        arr1[3]="vaibhav";
+        console.log(arr1);
+        console.log(arr1[1]);
+        
+        var arr2=new Array("rose","sunflower","lotus","hibiscus","jasmin","marigold");
+        console.log(arr2);
+        console.log(arr2[2]);
+
+        var  num3=new Array(4);
+        num3[0]="java";
+        num3[1]="c";
+        num3[2]="c++";
+        num3[3]="python";
+        num3[4]="rubi";
+        console.log(num3);
+        console.log(num3[3]);
+
+        var arr3=[]
+        console.log(arr3);
+
+        var arr4=[];
+
+        var range=parseInt(prompt("Enter the range"));
+        //read array
+        for(i=0;i<=range;i++)
+        {
+            arr4[i]=parseInt(prompt(`Enter the ${i} Element`));
+        }
+        //display array
+        // for(i=0;i<=range;i++)
+        // {
+        //     console.log( arr4[i]);
+         // }
+
+        // for(var i of arr4)
+        // {
+        //     console.log(i);
+        // }
+
+        // for(let i in arr4)// use for object
+        // {
+        //     console.log(i);
+        // }
+    
+        // arr4.forEach((i)=>{
+        //     console.log(i)
+        // })
+
+        //write a program max number
+
+        var max=arr4[0];
+        document.write(max)
+
+        for(i=1;i<range;i++)
+        {
+            if(max<arr4[i])
+            { 
+                max=arr4[i];
+            }
+        }
+        console.log(arr4)
+        console.log(`max number:-${max}`)
+
+
+    </script>
+
+</body>
+</html>

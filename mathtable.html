@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table
+        {
+            border-collapse: collapse;
+            height:2px;
+            width:10px;
+            
+        
+        }
+        table,tr,td
+        {
+            border: 2px solid lightgray;
+            padding:10px;
+        
+            
+        }
+        #t1
+        {
+            background-color:pink;
+        }
+        #t2
+        {
+            background-color:lightskyblue;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        // var n1=parseInt(prompt("Enter the first number:"));
+        // var n2=parseInt(prompt("Enter the second number:"));
+
+        document.write(`<table>`);
+        for(var r=1;r<=10;r++)
+        {
+            document.write(`<tr>`);
+            if(r%2==0)
+            {
+                for(var c=1;c<=10;c++)
+                {   
+                    document.write(`<td id="t1">`);
+                    document.write(`${r}*${c}=${(c*r)}<br>`);
+                    document.write(`</td>`);
+                }
+            }
+            else
+            {
+                for(var c=1;c<=10;c++)
+                {
+                    document.write(`<td id="t2">`);
+                    document.write(`${r}*${c}=${(c*r)}<br>`);
+                    document.write(`</td>`);
+                }
+            }
+            document.write(`</tr>`);
+        }
+        document.write(`</table>`);
+    </script>
+</body>
+</html>
