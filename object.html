@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let person={
+
+            Name:"Vaibhav",
+            Age:24,
+            Mno:9763265649,
+            Sal:86000,
+        }
+
+        // console.log(person)
+        // console.log(person.Name)
+        // console.log(person.Age)
+
+
+        let Empolye_info=[
+
+        {
+            Name:"john",
+            Sal:67000,
+            Roll:"salesman"
+        },
+        {
+            Name:"martin",
+            Sal:45000,
+            Roll:"manager"
+        },
+        {
+            Name:"Scott",
+            Sal:98000,
+            Roll:"devloper"
+        },
+        {
+            Name:"soham",
+            Sal:100000,
+            Roll:"manager"
+        }
+    ]
+
+    // console.log(Empolye_info)
+    // console.log(`Name:- ${Empolye_info[1].Name} && Salary:- ${Empolye_info[1].Sal}`)
+    // console.log(Empolye_info[3].Name)
+    console.log(`For loop output :-`)
+    console.log(`* List of Salary More than 50,000.`)
+
+    
+    for(let i in Empolye_info)
+    {
+        if(Empolye_info[i].Sal>=50000)
+        {
+            
+            console.log(`${Empolye_info[i].Name} ${Empolye_info[i].Roll}`)
+        
+        }
+    }
+
+
+    console.log(`map Function output :-`)
+
+    Empolye_info.map((e)=>{
+
+        // console.log(e)
+        console.log(`${e.Name} ${e.Sal}`)
+    })
+
+
+
+    console.log(`forEach Function output :-`)
+    Empolye_info.forEach((E)=>{
+
+        if(E.Sal>=70000)
+        {
+            console.log(`Name :- ${E.Name} Roll :- ${E.Roll}`)
+        }
+    })
+
+
+
+    console.log(`filter Function output :-`)
+
+
+let FilteredData= Empolye_info.filter(function(i){
+
+    return  i.Sal>=60000    
+    
+    })
+
+    console.log(FilteredData)
+
+
+    </script>
+</body>
+</html>
